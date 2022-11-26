@@ -1,0 +1,8 @@
+{
+    "input": "./Public_Photos",
+    "output": "./output/",
+    "title": "Wedding Gallery",
+    "theme-path": "./theme-timalika",
+    "cleanup": true,
+    "exclude": ["**/X*"]
+}

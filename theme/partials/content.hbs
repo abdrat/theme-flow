@@ -1,17 +1,57 @@
 
-<div id="container">
+
 
   <!--
     Gallery title
   -->
-  <header>
-    <h1><a href="{{relative gallery.home.url}}">{{gallery.title}}</a></h1>
-  </header>
+  
+        <!-- Start header -->
+        <header id="header" class="site-header header-style-2">
+            <nav class="navigation navbar navbar-default" style="background-color: #223d5a;">
+                <div class="container" style="background-color: #223d5a;">
+                    <div class="navbar-header">
+                        <button type="button" class="open-btn">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="couple-logo">
+                            <!-- <i class="fi flaticon-shape-1"></i> -->
+                            <!-- <h1><a href="#home" style="font-family: 'Cormorant Garamond', serif !important;">Timur & Malika</a></h1> -->
+                            <a href="https://timalika.com"><img src="./public/logo2.png" alt="" width="175"></a>
+                        </div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
+                        <button class="close-navbar"><i class="fa fa-close"></i></button>
+                        <ul class="nav navbar-nav" style="font-family: 'Roboto', sans-serif !important; color: white;">
+                            <li><a href="https://gallery.timalika.com">PHOTOS</a></li>
+                            <li><a href="https://timalika.com/#rsvp">RSVP</a></li>
+                            <!-- <li><a href="#directions">Directions</a></li> -->
+                            <!-- <li><a href="#dresscode">Dress Code</a></li> -->
+                            <li><a href="https://timalika.com/#events">EVENTS</a></li>
+                            <li><a href="https://timalika.com/#travel">TRAVEL</a></li>
+                            <!-- <li><a href="https://gallery.timalika.com">Галерея</a></li> -->
+                            <!-- <li><a href="#registry">Подарки</a></li> -->
+
+
+                        </ul>
+                    </div><!-- end of nav-collapse -->
+                </div><!-- end of container -->
+            </nav>
+        </header>
+        <!-- end of header -->
+
+
+
+
+  
+<div id="container">
 
   <!--
     Breadcrumbs of parent albums
   -->
-  <nav class="breadcrumbs">
+  <nav class="breadcrumbs" style="font-size: 1rem;">
     {{#each breadcrumbs~}}
       <a class="breadcrumb-item" href="{{relative url}}">{{title}}</a>&nbsp;/&nbsp;
     {{~/each~}}
